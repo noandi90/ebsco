@@ -1,0 +1,1851 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="og: https://ogp.me/ns#">
+  <head>
+     
+    <link rel="icon" href="/themes/custom/cog_ebsco/images/favicon.ico" type="image/vnd.microsoft.icon" />  
+      <meta charset="utf-8" /><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"1134225768",accountID:"3568865",trustKey:"66686",xpid:"VwMBWV5VDRABVFNaBgUPU1AG",licenseKey:"NRJS-95c274f07c8f56e17cb",applicationID:"1028148547"};;/*! For license information please see nr-loader-spa-1.237.1.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,r={5763:(e,t,r)=>{r.d(t,{P_:()=>f,Mt:()=>g,C5:()=>s,DL:()=>v,OP:()=>T,lF:()=>j,Yu:()=>y,Dg:()=>h,CX:()=>c,GE:()=>b,sU:()=>_});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,n.Qy)(e,a[e],"info")}var d=r(7056);const u=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},harvest:{tooManyRequestsDelay:60},session_replay:{enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10}}},l={};function f(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function h(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=(0,i.D)(t,u()),(0,n.Qy)(e,l[e],"config")}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var r=f(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const p={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},m={};function v(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!m[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return m[e]}function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");m[e]=(0,i.D)(t,p),(0,n.Qy)(e,m[e],"loader_config")}const y=(0,n.mF)().o;var w=r(385),x=r(6818);const A={buildEnv:x.Re,bytesSent:{},queryBytesSent:{},customTransaction:void 0,disabled:!1,distMethod:x.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(w._A?.performance?.timeOrigin||w._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+w._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof w._A.XMLHttpRequest?.prototype?.addEventListener,version:x.q4,denyList:void 0},E={};function T(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!E[e])throw new Error("Runtime for ".concat(e," was never set"));return E[e]}function _(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");E[e]=(0,i.D)(t,A),(0,n.Qy)(e,E[e],"runtime")}function j(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{r.d(t,{Re:()=>i,gF:()=>o,q4:()=>n});const n="1.237.1",i="PROD",o="CDN"},385:(e,t,r)=>{r.d(t,{FN:()=>a,IF:()=>d,Nk:()=>l,Tt:()=>s,_A:()=>o,il:()=>n,pL:()=>c,v6:()=>i,w1:()=>u});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=""+o?.location,s=/iPad|iPhone|iPod/.test(navigator.userAgent),c=s&&"undefined"==typeof SharedWorker,d=(()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),u=Boolean(n&&window.document.documentMode),l=!!navigator.sendBeacon},1117:(e,t,r)=>{r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{r.d(t,{L:()=>u,R:()=>c});var n=r(2177),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,r)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=[...s[e]];function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((e=>{let[t]=e;a(t)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},2177:(e,t,r)=>{r.d(t,{c:()=>l,ee:()=>d});var n=r(8632),i=r(2210),o=r(1284),a=r(5763),s="nr@context";let c=(0,n.fP)();var d;function u(){}function l(e){return(0,i.X)(e,s,f)}function f(){return new u}function h(){d.aborted=!0,d.backlog={}}c.ee?d=c.ee:(d=function e(t,r){var n={},c={},l={},g=!1;try{g=16===r.length&&(0,a.OP)(r).isolatedBacklog}catch(e){}var p={on:b,addEventListener:b,removeEventListener:y,emit:v,get:x,listeners:w,context:m,buffer:A,abort:h,aborted:!1,isBuffering:E,debugId:r,backlog:g?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return p;function m(e){return e&&e instanceof u?e:e?(0,i.X)(e,s,f):f()}function v(e,r,n,i,o){if(!1!==o&&(o=!0),!d.aborted||i){t&&o&&t.emit(e,r,n);for(var a=m(n),s=w(e),u=s.length,l=0;l<u;l++)s[l].apply(a,r);var f=T()[c[e]];return f&&f.push([p,e,r,a]),a}}function b(e,t){n[e]=w(e).concat(t)}function y(e,t){var r=n[e];if(r)for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)}function w(e){return n[e]||[]}function x(t){return l[t]=l[t]||e(p,t)}function A(e,t){var r=T();p.aborted||(0,o.D)(e,(function(e,n){t=t||"feature",c[n]=t,t in r||(r[t]=[])}))}function E(e){return!!T()[c[e]]}function T(){return p.backlog}}(void 0,"globalEE"),c.ee=d)},5546:(e,t,r)=>{r.d(t,{E:()=>n,p:()=>i});var n=r(2177).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},4402:(e,t,r)=>{r.d(t,{Ht:()=>d,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++r).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(r,++i).toString(16));return a.join("")}function c(){return s(16)}function d(){return s(32)}},7056:(e,t,r)=>{r.d(t,{Bq:()=>n,Hb:()=>o,oD:()=>i});const n="NRBA",i=144e5,o=18e5},7894:(e,t,r)=>{function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{r.d(t,{e:()=>o});var n=r(385),i={};function o(e){if(e in i)return i[e];if(0===(e||"").indexOf("data:"))return{protocol:"data"};let t;var r=n._A?.location,o={};if(n.il)t=document.createElement("a"),t.href=e;else try{t=new URL(e,r.href)}catch(e){return o}o.port=t.port;var a=t.href.split("://");!o.port&&a[1]&&(o.port=a[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===a[0]?"443":"80"),o.hostname=t.hostname||r.hostname,o.pathname=t.pathname,o.protocol=a[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var s=!t.protocol||":"===t.protocol||t.protocol===r.protocol,c=t.hostname===r.hostname&&t.port===r.port;return o.sameOrigin=s&&(!t.hostname||c),"/"===o.pathname&&(i[e]=o),o}},50:(e,t,r)=>{function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2587:(e,t,r)=>{r.d(t,{N:()=>c,T:()=>d});var n=r(2177),i=r(5546),o=r(8e3),a=r(3325);const s={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]};function c(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(Object.entries(e).forEach((e=>{let[t,n]=e;void 0===d[t]&&(s[t]?s[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),d[t]=Boolean(n))})),Object.keys(s).forEach((e=>{void 0===d[e]&&(s[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),d[e]=!1)})),(0,o.L)(t,a.D.pageViewEvent))}const d={}},2210:(e,t,r)=>{r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{r.d(t,{P:()=>o});var n=r(2177);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{r.d(t,{K:()=>a,b:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{r.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>u,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function d(e,t){a()[e]=t}function u(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;return void(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"==document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{r.d(t,{em:()=>v,u5:()=>D,QU:()=>S,_L:()=>I,Gm:()=>z,Lg:()=>M,BV:()=>X,Kf:()=>K});var n=r(2177);const i="nr@original";var o=Object.prototype.hasOwnProperty,a=!1;function s(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");var a,s,c,d="-"===n.charAt(0);for(c=0;c<t.length;c++)u(a=e[s=t[c]])||(e[s]=r(a,d?s+n:n,i,s,o))},r.flag=i,r;function r(t,r,n,a,s){return u(t)?t:(r||(r=""),nrWrapper[i]=t,d(t,nrWrapper,e),nrWrapper);function nrWrapper(){var i,d,u,l;try{d=this,i=[...arguments],u="function"==typeof n?n(i,d):n||{}}catch(t){c([t,"",[i,d,a],u],e)}o(r+"start",[i,d,a],u,s);try{return l=t.apply(d,i)}catch(e){throw o(r+"err",[i,d,e],u,s),e}finally{o(r+"end",[i,d,l],u,s)}}}function o(r,n,i,o){if(!a||t){var s=a;a=!0;try{e.emit(r,n,i,t,o)}catch(t){c([t,r,n,i],e)}a=s}}}function c(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){c([e],r)}for(var n in e)o.call(e,n)&&(t[n]=e[n]);return t}function u(e){return!(e&&e instanceof Function&&e.apply&&!e[i])}var l=r(2210),f=r(385);const h={},g=XMLHttpRequest,p="addEventListener",m="removeEventListener";function v(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=s(t,!0);function i(e){r.inPlace(e,[p,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&b(document,i),b(f._A,i),b(g.prototype,i)),t.on(p+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,"nr@wrapped",(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function b(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,p);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var y="fetch-",w=y+"body-",x=["arrayBuffer","blob","json","text","formData"],A=f._A.Request,E=f._A.Response,T="prototype",_="nr@context";const j={};function D(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(A&&E&&f._A.fetch))return t;if(j[t.debugId]++)return t;function r(e,r,n){var i=e[r];"function"==typeof i&&(e[r]=function(){var e,r=[...arguments],o={};t.emit(n+"before-start",[r],o),o[_]&&o[_].dt&&(e=o[_].dt);var a=i.apply(this,r);return t.emit(n+"start",[r,e],a),a.then((function(e){return t.emit(n+"end",[null,e],a),e}),(function(e){throw t.emit(n+"end",[e],a),e}))})}return j[t.debugId]=1,x.forEach((e=>{r(A[T],e,w),r(E[T],e,w)})),r(f._A,"fetch",y),t.on(y+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(y+"done",[null,r],n)}else t.emit(y+"done",[e],n)})),t}const C={},N=["pushState","replaceState"];function S(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||C[t.debugId]++||(C[t.debugId]=1,s(t).inPlace(window.history,N,"-")),t}var O=r(3239);const P={},R=["appendChild","insertBefore","replaceChild"];function I(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||P[t.debugId])return t;P[t.debugId]=!0;var r=s(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function c(e,t){if(!e)return t;const r=e.match(a),n=r[1];return c(r[3],t[n])}return r.inPlace(Node.prototype,R,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,s=a.match(i),s?s[1]:null);var a,s;if(!n)return;var d=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:c(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof d.parent[d.key])return;var u={};function l(){t.emit("jsonp-end",[],u),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}function f(){t.emit("jsonp-error",[],u),t.emit("jsonp-end",[],u),e.removeEventListener("load",l,(0,O.m$)(!1)),e.removeEventListener("error",f,(0,O.m$)(!1))}r.inPlace(d.parent,[d.key],"cb-",u),e.addEventListener("load",l,(0,O.m$)(!1)),e.addEventListener("error",f,(0,O.m$)(!1)),t.emit("new-jsonp",[e.src],u)}(e[0])})),t}var k=r(5763);const H={};function z(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||H[t.debugId])return t;H[t.debugId]=!0;var r=s(t),i=k.Yu.MO;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const L={};function M(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(L[t.debugId])return t;L[t.debugId]=!0;var r=n.c,o=s(t),a=k.Yu.PR;return a&&function(){function e(r){var n=t.context(),i=o(r,"executor-",n,null,!1);const s=Reflect.construct(a,[i],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,i=r(e);i.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=o(s[0],"cb-",i,null,!1),s[1]=o(s[1],"cb-",i,null,!1);const d=n.apply(this,s);return i.nextPromise=d,t.emit("propagate",[e,!0],d,!1,!1),d},a.prototype.then[i]=n,t.on("executor-start",(function(e){e[0]=o(e[0],"resolve-",this,null,!1),e[1]=o(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const B={},F="setTimeout",U="setInterval",q="clearTimeout",Z="-start",G="-",V=[F,"setImmediate",U,q,"clearImmediate"];function X(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(B[t.debugId]++)return t;B[t.debugId]=1;var r=s(t);return r.inPlace(f._A,V.slice(0,2),F+G),r.inPlace(f._A,V.slice(2,3),U+G),r.inPlace(f._A,V.slice(3),q+G),t.on(U+Z,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(F+Z,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const Y={},Q=["open","send"];function K(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(Y[r.debugId]++)return r;Y[r.debugId]=1,v(t);var i=s(r),o=k.Yu.XHR,a=k.Yu.MO,c=k.Yu.PR,d=k.Yu.SI,u="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],g=f._A.XMLHttpRequest.listeners,p=f._A.XMLHttpRequest=function(e){var t=new o(e);function n(){try{r.emit("new-xhr",[t],t),t.addEventListener(u,b,(0,O.m$)(!1))}catch(e){(0,W.Z)("An error occured while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}}return this.listeners=g?[...g,n]:[n],this.listeners.forEach((e=>e())),t};function m(e,t){i.inPlace(t,["onreadystatechange"],"fn-",E)}function b(){var e=this,t=r.context(e);e.readyState>3&&!t.resolved&&(t.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",E)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,Q,"-xhr-",E),r.on("send-xhr-start",(function(e,t){m(e,t),function(e){h.push(e),a&&(y?y.then(A):d?d(A):(w=-w,x.data=w))}(t)})),r.on("open-xhr-start",m),a){var y=c&&c.resolve();if(!d&&!c){var w=1,x=document.createTextNode(w);new a(A).observe(x,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===u||A()}));function A(){for(var e=0;e<h.length;e++)m(0,h[e]);h.length&&(h=[])}function E(e,t){return t}return r}},7825:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{r.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>n});const n=r(3325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},9251:(e,t,r)=>{r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},3614:(e,t,r)=>{r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>d,FN_START:()=>c,PUSH_STATE:()=>u,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,d="fn"+s,u="pushState"},7836:(e,t,r)=>{r.d(t,{BODY:()=>A,CB_END:()=>E,CB_START:()=>d,END:()=>x,FEATURE_NAME:()=>i,FETCH:()=>_,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>p,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>u,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>g,JS_TIME:()=>T,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>w,originalSetTimeout:()=>y});var n=r(5763);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",d="cb-start",u="api-ixn-",l="remaining",f="interaction",h="spaNode",g="jsonpNode",p="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,w="-start",x="-end",A="-body",E="cb"+x,T="jsTime",_="fetch"},5938:(e,t,r)=>{r.d(t,{W:()=>o});var n=r(5763),i=r(2177);class o{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,n.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=r,this.blocked=!1}}},9144:(e,t,r)=>{r.d(t,{j:()=>m});var n=r(3325),i=r(5763),o=r(5546),a=r(2177),s=r(7894),c=r(8e3),d=r(3960),u=r(385),l=r(50),f=r(3081),h=r(8632);function g(){const e=(0,h.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var p=r(2587);function m(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},m=arguments.length>2?arguments[2]:void 0,v=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:x={loaderType:m},exposed:A=!0}=t;const E=(0,h.gG)();y||(b=E.init,y=E.info,w=E.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),y.jsAttributes??={},u.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y);const T=(0,i.P_)(e);x.denyList=[...T.ajax?.deny_list||[],...T.ajax?.block_internal?[y.beacon,y.errorBeacon]:[]],(0,i.sU)(e,x),g();const _=function(e,t){t||(0,c.R)(e,"api");const h={};var g=a.ee.get(e),p=g.get("tracer"),m="api-",v=m+"ixn-";function b(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),x(m,n,!0,o||null===r?"session":void 0)(t,r)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>h[e]=x(m,e,!0,"api"))),h.addPageAction=x(m,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=x(m,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,x(m,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(v+"tracer",[(0,s.z)(),e,r],i,n.D.spa,g),function(){if(p.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw p.emit("fn-err",[arguments,this,e],r),e}finally{p.emit("fn-end",[(0,s.z)()],r)}}}};function x(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,g),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,g),r?void 0:this}}function A(){r.e(439).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=x(v,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,g),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,g)},u.il?(0,d.b)((()=>A()),!0):A(),h}(e,v);return(0,h.Qy)(e,_,"api"),(0,h.Qy)(e,A,"exposed"),(0,h.EZ)("activatedFeatures",p.T),_}},3325:(e,t,r)=>{r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",193:"session_trace-aggregate",242:"session-manager",317:"jserrors-aggregate",348:"page_view_timing-aggregate",412:"lazy-feature-loader",439:"async-api",538:"recorder",590:"session_replay-aggregate",675:"compressor",786:"page_view_event-aggregate",873:"spa-aggregate",898:"ajax-aggregate"}[e]||e)+"."+{78:"467f8594",147:"b86cefcf",193:"ac30a1f3",242:"d080e4cc",317:"319b8300",348:"7b2a53ee",412:"c1052c27",439:"e9f77430",538:"9c5c1546",590:"8b420469",646:"9e7a6b8d",675:"9614fd62",786:"4988d952",860:"95a91211",873:"550eec7b",898:"d95c640e"}[e]+"-1.237.1.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var f=(t,n)=>{s.onerror=s.onload=null,clearTimeout(h);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},h=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.j=635,i.p="https://js-agent.newrelic.com/",(()=>{var e={635:0,249:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,d=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=window.webpackChunkNRBA=window.webpackChunkNRBA||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})();var o={};(()=>{i.r(o);var e=i(50);class t{addPageAction(t,r){(0,e.Z)("Call to agent api addPageAction failed. The session trace feature is not currently initialized.")}setPageViewName(t,r){(0,e.Z)("Call to agent api setPageViewName failed. The page view feature is not currently initialized.")}setCustomAttribute(t,r,n){(0,e.Z)("Call to agent api setCustomAttribute failed. The js errors feature is not currently initialized.")}noticeError(t,r){(0,e.Z)("Call to agent api noticeError failed. The js errors feature is not currently initialized.")}setUserId(t){(0,e.Z)("Call to agent api setUserId failed. The js errors feature is not currently initialized.")}setErrorHandler(t){(0,e.Z)("Call to agent api setErrorHandler failed. The js errors feature is not currently initialized.")}finished(t){(0,e.Z)("Call to agent api finished failed. The page action feature is not currently initialized.")}addRelease(t,r){(0,e.Z)("Call to agent api addRelease failed. The agent is not currently initialized.")}}var r=i(3325),n=i(5763);const a=Object.values(r.D);function s(e){const t={};return a.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var c=i(9144);var d=i(5546),u=i(385),l=i(8e3),f=i(5938),h=i(3960);class g extends f.W{constructor(e,t,r){let n=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=n,this.abortHandler,this.featAggregate,this.onAggregateImported,n&&(0,l.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;const r=u.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await Promise.all([i.e(860),i.e(242)]).then(i.bind(i,3228));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,l.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(412).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),o(!1)}};u.il?(0,h.b)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplay))}}var p=i(7633),m=i(7894);class v extends g{static featureName=p.t9;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||u.Tt)&&"undefined"!=typeof PerformanceTiming){const t=(0,n.OP)(e);t[p.Dz]=Math.max(Date.now()-t.offset,0),(0,h.K)((()=>t[p.qw]=Math.max((0,m.z)()-t[p.Dz],0))),(0,h.b)((()=>{const e=(0,m.z)();t[p.OJ]=Math.max(e-t[p.Dz],0),(0,d.p)("timing",["load",e],void 0,r.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var b=i(1117),y=i(1284);class w extends b.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,y.D)(e,(function(e,r){t[e]=x(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,y.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=x(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=x(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=E(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function x(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function E(e){return"object"!=typeof e?[]:(0,y.D)(e,T)}function T(e,t){return t}var _=i(8632),j=i(4402),D=i(4351);var C=i(7956),N=i(3239),S=i(9251);class O extends g{static featureName=S.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,S.t,r),u.il&&((0,n.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,C.N)((()=>(0,d.p)("docHidden",[(0,m.z)()],void 0,S.t,this.ee)),!0),(0,N.bP)("pagehide",(()=>(0,d.p)("winPagehide",[(0,m.z)()],void 0,S.t,this.ee))),this.importAggregator())}}var P=i(3081);class R extends g{static featureName=P.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t9,r),this.importAggregator()}}var I=i(6660);class k{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class H extends g{static featureName=I.t;#e=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#e.has(n)&&(this.#e.add(n),(0,d.p)("err",[this.#t(n),(0,m.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,d.p)("ierr",[this.#t(e),(0,m.z)(),!0],void 0,r.D.jserrors,this.ee)})),u._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,d.p)("err",[this.#r(e),(0,m.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,N.m$)(!1,this.removeOnAbort?.signal)),u._A.addEventListener("error",(e=>{this.abortHandler&&(this.#e.has(e.error)?this.#e.delete(e.error):(0,d.p)("err",[this.#n(e),(0,m.z)()],void 0,r.D.jserrors,this.ee))}),(0,N.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.#e.clear(),this.abortHandler=void 0}#t(e){return e instanceof Error?e:void 0!==e?.message?new k(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new k("string"==typeof e?e:(0,D.P)(e))}#r(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new k(t);const r=this.#t(e.reason);return r.message=t+r.message,r}#n(e){return e.error instanceof Error?e.error:new k(e.message,e.filename,e.lineno,e.colno)}}var z=i(2210);let L=1;const M="nr@id";function B(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===u._A?0:(0,z.X)(e,M,(function(){return L++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,D.P)(e).length}catch(e){return}}}var U=i(1214),q=i(7243);class Z{constructor(e){this.agentIdentifier=e,this.generateTracePayload=this.generateTracePayload.bind(this),this.shouldGenerateTrace=this.shouldGenerateTrace.bind(this)}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,j.M)(),s=(0,j.Ht)(),c=Date.now(),d={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(d.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),d.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(d.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),d}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof u._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,D.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,q.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var G=i(7825),V=["load","error","abort","timeout"],X=V.length,W=n.Yu.REQ,Y=u._A.XMLHttpRequest;class Q extends g{static featureName=G.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,G.t,i),(0,n.OP)(e).xhrWrappable&&(this.dt=new Z(e),this.handler=(e,t,r,n)=>(0,d.p)(e,t,r,n,this.ee),(0,U.u5)(this.ee),(0,U.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=E,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){_(t,e)}),(0,N.m$)(!1)),u.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,N.m$)(!1))}function s(e){this.params={method:e[0]},T(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function d(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,m.z)(),this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<X;s++)r.addEventListener(V[s],this.listener,(0,N.m$)(!1))}function l(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+B(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+B(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function g(){this.endTime=(0,m.z)()}function p(e,r){r instanceof Y&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function v(e,r){r instanceof Y&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function b(e,t,r){t instanceof Y&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,m.z)()))}function y(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,m.z)()-this.xhrCbStart,this.onload,r],r)}function w(e){var t,r=e[1]||{};"string"==typeof e[0]?t=e[0]:e[0]&&e[0].url?t=e[0].url:u._A?.URL&&e[0]&&e[0]instanceof URL&&(t=e[0].href),t&&(this.parsedOrigin=(0,q.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if("string"==typeof e[0]||u._A?.URL&&e[0]&&e[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}else e[0]&&e[0].headers&&s(e[0].headers,n)&&(this.dt=n);function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function x(e,t){this.params={},this.metrics={},this.startTime=(0,m.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:u._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),T(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.txSize=F(n.body)||0}function A(e,t){var n;this.endTime=(0,m.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,m.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function E(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<X;o++)e.removeEventListener(V[o],this.listener,!1);t.aborted||(n.duration=(0,m.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):_(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function T(e,t){var r=(0,q.e)(t),n=e.params;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}function _(e,t){e.params.status=t.status;var r=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(t,e.lastSize);if(r&&(e.metrics.rxSize=r),e.sameOrigin){var n=t.getResponseHeader("X-NewRelic-App-Data");n&&(e.params.cat=n.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",d),t.on("xhr-cb-time",l),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",g),t.on("addEventListener-end",p),t.on("removeEventListener-end",v),t.on("fn-end",y),t.on("fetch-before-start",w),t.on("fetch-start",x),t.on("fn-start",b),t.on("fetch-done",A)}(e,this.ee,this.handler,this.dt),this.importAggregator())}}var K=i(3614);const{BST_RESOURCE:J,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=K;var se=i(7836);const{FEATURE_NAME:ce,START:de,END:ue,BODY:le,CB_END:fe,JS_TIME:he,FETCH:ge,FN_START:pe,CB_START:me,FN_END:ve}=se;var be=i(4649);class ye extends g{static featureName=be.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,be.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,j.ky)(16);super(),u._A?(this.agentIdentifier=r,this.sharedAggregator=new w({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(v),Object.assign(this,(0,c.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.start()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}start(){const t="features";try{const n=s(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(t.featureName);i.every((e=>n[e]))||(0,e.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,D.P)(i),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(r){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",r);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,_.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}addToTrace(t){(0,e.Z)("Call to agent api addToTrace failed. The page action feature is not currently initialized.")}setCurrentRouteName(t){(0,e.Z)("Call to agent api setCurrentRouteName failed. The spa feature is not currently initialized.")}interaction(){(0,e.Z)("Call to agent api interaction failed. The spa feature is not currently initialized.")}}({features:[Q,v,O,class extends g{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!u.il)return;const n=this.ee;let i;(0,U.QU)(n),this.eventsEE=(0,U.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,m.z)()})),this.eventsEE.on(ie,(function(e,t){(0,d.p)("bst",[e[0],t,this.bstStart,(0,m.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,m.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,d.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,d.p)(J,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},R,ye,H,class extends g{static featureName=ce;constructor(e,t){if(super(e,t,ce,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!u.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,U._L)(this.ee),s=(0,U.Lg)(this.ee),c=(0,U.BV)(this.ee),d=(0,U.Kf)(this.ee),l=this.ee.get("events"),f=(0,U.u5)(this.ee),h=(0,U.QU)(this.ee),g=(0,U.Gm)(this.ee);function p(e,t){h.emit("newURL",[""+window.location,t])}function v(){i++,r=window.location.hash,this[pe]=(0,m.z)()}function b(){i--,window.location.hash!==r&&p(0,!0);var e=(0,m.z)();this[he]=~~this[he]+e-this[pe],this[ve]=e}function y(e,t){e.on(t,(function(){this[t]=(0,m.z)()}))}this.ee.on(pe,v),s.on(me,v),a.on(me,v),this.ee.on(ve,b),s.on(fe,b),a.on(fe,b),this.ee.buffer([pe,ve,"xhr-resolved"],this.featureName),l.buffer([pe],this.featureName),c.buffer(["setTimeout"+ue,"clearTimeout"+de,pe],this.featureName),d.buffer([pe,"new-xhr","send-xhr"+de],this.featureName),f.buffer([ge+de,ge+"-done",ge+le+de,ge+le+ue],this.featureName),h.buffer(["newURL"],this.featureName),g.buffer([pe],this.featureName),s.buffer(["propagate",me,fe,"executor-err","resolve"+de],this.featureName),o.buffer([pe,"no-"+pe],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),y(f,ge+de),y(f,ge+"-done"),y(a,"new-jsonp"),y(a,"jsonp-end"),y(a,"cb-start"),h.on("pushState-end",p),h.on("replaceState-end",p),window.addEventListener("hashchange",p,(0,N.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",p,(0,N.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){p(0,i>1)}),(0,N.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#i,this.importAggregator()}#i(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})(),window.NRBA=o})();</script>
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="fa59672f-2a80-4620-a658-3fbe29cedb62"></script>
+<script>function OptanonWrapper() { };</script>
+<noscript><style>form.antibot * :not(.antibot-message) { display: none !important; }</style>
+</noscript><link rel="canonical" href="https://www.ebsco.com/blogs/health-notes" />
+<meta property="og:site_name" content="EBSCO Information Services, Inc. | www.ebsco.com" />
+<meta property="og:url" content="https://www.ebsco.com/blogs/health-notes" />
+<meta property="og:title" content="EBSCO Health Notes Blog" />
+<meta name="twitter:title" content="EBSCO Health Notes Blog" />
+<meta name="twitter:url" content="https://www.ebsco.com/blogs/health-notes" />
+<meta name="google-site-verification" content="IO_s-DHVhe4huNSal1oa4FIuZprMcQRq3tDNch3QMKs" />
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content="Welcome to the EBSCO Health Notes Blog. Explore engaging posts on health care news, product developments, medical research, clinical decision support, nursing and much more." />
+<script src="/sites/default/files/google_tag/ebsco.com_gtm_container/google_tag.script.js?rz33rv" defer></script>
+
+    <title>EBSCO Health Notes Blog</title>
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_DfIk0kDE_97QqZBJr5TF4iiP6Rt7nG3gWSu-Jh5AKCY.css" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_K2CmmKu6R7l0aOHD-LKXcT-OrYBo1HQ5ALJo3wNQf4k.css" />
+<link rel="stylesheet" media="all" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;display=swap" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_sjr1agFMGkwDjwbxHv_xvg0XiRrgCpkTf39fWevqnD4.css" />
+
+    
+  </head>
+  <body class="path--blogs first-segment--blogs body-sidebars-second syspath--blogs-health-notes alias--blogs-health-notes logged-out">
+    <div id="skip">
+      <a class="visually-hidden focusable skip-link" href="#block-cog-ebsco-main-menu">
+        Skip to main navigation
+      </a>
+    </div>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WVN26MP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    <div  class="page-standard" id="pg__c">
+
+  <!-- ______________________ HEADER _______________________ -->
+
+  <header id="header" class="container header">
+          <div id="header-region">
+        <div>
+          
+
+
+
+
+  <div class="region region-header edl-nav-container">
+    <div class="edl-nav-row">
+      <div class="edl-navbar">
+        <!-- Main menu component goes here -->
+                            
+
+
+<div class="edl-menu-trigger edl-showhide--container" aria-owns="edlMainNav">
+  <a class="edl-showhide--trigger trigger--is-toggle fnTriggerOverlay
+    "
+    aria-expanded="false"
+     aria-controls="edlMainNav__sect0"     id="edlMainNav__tabID_0"    href="#">
+  <span>Close</span>  </a>
+</div>
+        
+        <!-- Main logo component/pattern goes here -->
+                                      
+
+<a class="edl-site-logo "
+  href="/">
+<svg role="img" aria-labelledby="title" width="119" height="22" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 119 27" style="enable-background:new 0 0 119 27;" xml:space="preserve">
+  <g>
+    <title id="title">EBSCO, research databases, ebooks, discovery service</title>
+    <path id="XMLID_25_" class="st0" d="M1,25.692v-1.462c2.564,0,3.29-0.769,3.29-2.846V5.616c0-2.077-0.727-2.846-3.29-2.846V1.308
+      h18.633l0.995,3.462c0.115,0.385,0.191,0.731,0.191,0.885c0,0.192-0.344,0.577-0.765,0.577c-0.268,0-0.383-0.154-0.803-0.808
+      c-1.722-2.577-3.941-3.038-7.346-3.038c-2.372,0-2.64,0.385-2.64,1.923v7.615h3.023c2.219,0,3.061-0.5,3.558-2.731
+      c0.077-0.423,0.153-0.462,0.727-0.5c0.459,0,0.65,0.115,0.65,0.731v7.538c0,0.385-0.306,0.5-0.727,0.5
+      c-0.421,0-0.497-0.115-0.536-0.269c-1.033-3.385-1.683-3.577-3.673-3.577H9.264v8.192c0,2.039,0.383,2.423,3.941,2.423
+      c4.706,0,6.007-1.423,7.92-4.731c0.115-0.192,0.191-0.308,0.65-0.308c0.421,0,0.574,0.115,0.574,0.269
+      c0,0.154-0.038,0.346-0.076,0.692l-0.842,5.539H1z"/>
+    <path id="XMLID_21_" class="st0" d="M28.624,5.616c0-2.077-0.727-2.846-3.52-2.846V1.308h9.871c6.198,0,9.565,2.077,9.565,5.731
+      c0,3.423-3.214,4.962-5.433,5.615v0.077c4.591,0.577,6.811,3.654,6.811,6.5c0,2.616-1.99,6.462-8.877,6.462H25.104v-1.462
+      c2.793,0,3.52-0.769,3.52-2.846V5.616z M33.598,10.654c0,1.116,0.536,1.5,2.104,1.5c2.372,0,4.247-1.039,4.247-4.731
+      c0-3.577-1.683-4.654-4.438-4.654c-1.531,0-1.913,0.615-1.913,2V10.654z M33.598,21.577c0,2.038,0.612,2.654,2.908,2.654
+      c3.061,0,4.591-2.154,4.591-5.231c0-3.692-2.372-5.385-5.586-5.385c-1.607,0-1.913,0.308-1.913,1.846V21.577z"/>
+    <path id="XMLID_19_" class="st0" d="M63.517,6.385c0,0.808-0.153,0.962-0.65,0.962c-0.421,0-0.574-0.231-1.071-1.231
+      c-0.88-1.808-2.831-3.654-5.28-3.654c-2.219,0-4.132,1.539-4.132,3.616c0,5.423,12.32,4.038,12.32,12.461
+      c0,3.385-1.875,7.462-8.953,7.462c-2.028,0-5.395-0.731-6.734-1.462c-0.268-0.346-0.612-3.385-0.612-5.039
+      c0-0.808,0.153-1.077,0.804-1.077s0.803,0.077,1.071,1.077c0.421,1.5,2.028,5.039,6.198,5.039c2.449,0,4.63-1.231,4.63-3.885
+      c0-5.731-12.32-5-12.32-12.654c0-4.769,4.591-7,8.341-7c3.597,0,6.007,1.077,6.237,1.385c0.038,0.538,0.153,1.038,0.153,2.538
+      V6.385z"/>
+    <path id="XMLID_17_" class="st0" d="M89.573,21.461c-0.115,1-0.268,1.423-0.612,1.846C88.387,24,85.287,26,79.893,26
+      c-7.155,0-12.894-5.615-12.894-12.5S72.738,1,79.893,1c4.4,0,9.489,1.846,9.489,3.577c0,1.692-0.268,3.154-0.268,3.769
+      c0,0.231-0.191,0.769-0.65,0.769c-0.383,0-0.536-0.115-1.071-1.538c-1.263-3.269-4.017-5.116-7.499-5.116
+      c-3.405,0-7.537,2.923-7.537,11.039c0,8.115,4.132,11.038,8.685,11.038c4.209,0,6.734-4,7.232-5.231
+      c0.344-0.808,0.459-0.885,0.918-0.885c0.383,0,0.612,0.192,0.612,0.5c0,0.231-0.038,0.577-0.076,1.192L89.573,21.461z"/>
+    <path id="XMLID_14_" class="st0" d="M105.106,1C112.261,1,118,6.616,118,13.5S112.261,26,105.106,26s-12.894-5.615-12.894-12.5
+      S97.951,1,105.106,1z M105.106,24.538c3.405,0,7.537-2.923,7.537-11.038c0-8.116-4.132-11.039-7.537-11.039
+      S97.568,5.385,97.568,13.5C97.568,21.615,101.701,24.538,105.106,24.538z"/>
+  </g>
+</svg>
+</a>
+        
+        <!-- Action menu component goes here -->
+        <div class="edl-navbar_sub-menu edl-showhide--container" aria-owns="actions__panels">
+          <!-- search icon -->
+          <a class="edl-navbar_sub-menu-item edl-navbar_search edl-showhide--trigger trigger--is-toggle" aria-expanded="false" aria-controls="navbar_search__sect0" id="navbar_search__tabID_0" href="#">
+            <i class="fal fa-search"></i>
+          </a>
+          <!-- login icon -->
+          <a class="edl-navbar_sub-menu-item edl-navbar_login edl-showhide--trigger trigger--is-toggle" aria-expanded="false" aria-controls="navbar_login__sect0" id="navbar_login__tabID_0" href="#">
+            <i class="fal fa-user-alt"></i>
+          </a>
+          <!-- site select icon -->
+          <a class="edl-navbar_sub-menu-item edl-navbar_site-select edl-showhide--trigger trigger--is-toggle" aria-expanded="false" aria-controls="navbar_site__sect0" id="navbar_site__tabID_0" href="#">
+            <i class="fal fa-globe"></i>
+          </a>
+          <!-- cta -->
+          <div class="edl-navbar_sub-menu-item edl-navbar_cta">
+                                    
+  <a class="edl-btn
+    "href="/contact">
+        <span class="btn-text">Contact us</span>  </a>
+          </div>
+          <!-- mobile sub-menu icon -->
+          <a class="edl-navbar_sub-menu-item edl-navbar_mobile edl-showhide--trigger trigger--is-toggle fnTriggerOverlay" aria-expanded="false" aria-controls="actionMenu__sect0" id="actionMenu__tabID_0" href="">
+            <i class="fal fa-ellipsis-v fa-lg"></i>
+            <i class="fal fa-times fa-lg"></i>
+          </a>
+        </div>
+
+        
+  <!-- // ACTION MENU PANELS -->
+  <div id="actions__panels">
+    <!-- search -->
+    <div class="edl-showhide--target" id="navbar_search__sect0" role="region" aria-labelledby="navbar_search__tabID_0" hidden>
+      <form action="/search" method="get" id="views-exposed-form-acquia-search-page" accept-charset="UTF-8">
+  
+
+<p class="js-form-item form-item js-form-type-textfield form-item-search js-form-item-search form-no-label">
+        <input placeholder="Search ebsco.com" data-drupal-selector="edit-search" type="text" id="edit-search--2" name="search" value="" size="30" maxlength="128" class="form-text" autocomplete="on" />
+
+        </p>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--2">
+        
+  <button class="edl-btn
+    edl-btn--form-submit button js-form-submit form-submit" data-drupal-selector="edit-submit-acquia-search-2" type="submit" id="edit-submit-acquia-search--2" value="Search" class="button js-form-submit form-submit">
+    <i class="fal fa-search"></i>      </button>
+
+
+</div>
+
+
+</form>
+
+    </div>
+    <!-- login -->
+    <div class="edl-showhide--target" id="navbar_login__sect0" role="region" aria-labelledby="navbar_login__tabID_0" hidden>
+      <div class="target-content">
+                                        <h3>Sign In</h3>
+
+  <div class="column-group">
+    <h4>Librarians/Admins</h4>
+          
+<!-- ////////// EDL LINK GROUP ////////// -->
+<div class="edl-link-group
+    "
+  
+  >
+
+
+  <ul>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://www.ebsconet.com/"
+   target="_blank"  >
+    EBSCONET
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://eadmin.ebscohost.com/EAdmin/login.aspx"
+   target="_blank"  >
+    EBSCOadmin
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://ecm.ebscohost.com/User/Login"
+   target="_blank"  >
+    EBSCOhost Collection Manager
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://www.gobi3.com/Pages/Login.aspx"
+   target="_blank"  >
+    GOBI
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://experience.ebsco.com"
+   target="_blank"  >
+    EBSCO Experience Manager
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://connect.ebsco.com/s/loginpage"
+   target="_blank"  >
+    EBSCO Connect
+</a>
+          </li>
+	  </ul>
+</div>
+      </div>
+  <div class="column-separator">
+    <hr />
+  </div>
+<div class="column-group-wrapper">
+  <div class="column-group">
+    <h4>Users</h4>
+          
+<!-- ////////// EDL LINK GROUP ////////// -->
+<div class="edl-link-group
+    "
+  
+  >
+
+
+  <ul>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="/find-my-organization"
+    >
+    Start your research
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="/products/ebsco-mobile-app-research-anytime-anywhere"
+    >
+    EBSCO Mobile App
+</a>
+          </li>
+	  </ul>
+</div>
+      </div>
+  <div class="column-group">
+    <h4>Clinical Decisions Users</h4>
+          
+<!-- ////////// EDL LINK GROUP ////////// -->
+<div class="edl-link-group
+    "
+  
+  >
+
+
+  <ul>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://login.ebsco.zone/login?state=hKFo2SBnMWNYY2o0UWEtQ1RHRGQ2REc2V3dGME94Wk1ERlJMN6FupWxvZ2luo3RpZNkgV2YzOVI4SG1CN21MQWRIZFlaWkJmNEZOYkotVkZpb1OjY2lk2SBQWVc3d2JMTllxaTdRUG9Zb0oxZkM2NW9vSkd0VXo4eg&amp;client=PYW7wbLNYqi7QPoYoJ1fC65ooJGtUz8z&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fwww.ebsco.com%2Fapi&amp;redirect_uri=https%3A%2F%2Fwww.dynamedex.com%2Fauth0-login&amp;response_type=code&amp;scope=openid%20email%20profile%20offline_access%20read%3Abasic%20read%3Admx"
+   target="_blank"  >
+    DynaMedex
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://login.ebsco.zone/login?state=hKFo2SBRRkZHN0ZJcDFSdzBjZkxCVDhmT2ZWUUFvT3hIcVpmS6FupWxvZ2luo3RpZNkgdFZWTExMMUNkdFljYWY0VDdPWkxBTXhBOFpjS3VSMmyjY2lk2SA1VU5vV3Bmc2pCWTVTTHZXRzc5MlhJN1pyUmVWeXlvMg&amp;client=5UNoWpfsjBY5SLvWG792XI7ZrReVyyo2&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fwww.ebsco.com%2Fapi&amp;redirect_uri=https%3A%2F%2Fwww.dynamed.com%2Fauth0-login&amp;response_type=code&amp;scope=openid%20email%20profile%20offline_access%20read%3Abasic"
+   target="_blank"  >
+    DynaMed
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://login.ebsco.zone/login?state=hKFo2SBRRkZHN0ZJcDFSdzBjZkxCVDhmT2ZWUUFvT3hIcVpmS6FupWxvZ2luo3RpZNkgdFZWTExMMUNkdFljYWY0VDdPWkxBTXhBOFpjS3VSMmyjY2lk2SA1VU5vV3Bmc2pCWTVTTHZXRzc5MlhJN1pyUmVWeXlvMg&amp;client=5UNoWpfsjBY5SLvWG792XI7ZrReVyyo2&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fwww.ebsco.com%2Fapi&amp;redirect_uri=https%3A%2F%2Fwww.dynamed.com%2Fauth0-login&amp;response_type=code&amp;scope=openid%20email%20profile%20offline_access%20read%3Abasic"
+   target="_blank"  >
+    DynaMed Decisions
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://login.ebsco.zone/login?state=hKFo2SBSbEtSUUI2eXVYNUdOU2c0dzJxQkpGX05QX3UzVS1iTqFupWxvZ2luo3RpZNkgUW80Z0lhZUdjSnVjSVRXVFJxRTVCMHRHTWZwRVQycXWjY2lk2SBPOVoxUUo1emtWc1VDU0dwc1pqdGxla1BJNmNJRU8zOQ&amp;client=O9Z1QJ5zkVsUCSGpsZjtlekPI6cIEO39&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fwww.ebsco.com%2Fapi&amp;redirect_uri=https%3A%2F%2Fwww.dynahealth.com%2Fauth0-login&amp;response_type=code&amp;scope=openid%20email%20profile%20offline_access%20read%3Askills%20read%3Anursing-skills%20read%3Ahealth-profession%20read%3Apatient-instruction%20read%3Askill-notes%20read%3Aworkplace-skills%20search%3ADHSKILL%20read%3Ahidden-skills%20read%3Adhuser"
+   target="_blank"  >
+    Dynamic Health
+</a>
+          </li>
+	  </ul>
+</div>
+      </div>
+</div>
+      </div>
+    </div>
+
+    <!-- site select -->
+    <div class="edl-showhide--target" id="navbar_site__sect0" role="region" aria-labelledby="navbar_site__tabID_0" hidden>
+      
+
+
+<ul class="site-select">
+      <li >
+      <a href="/cs-cz">Čeština</a>
+    </li>
+      <li >
+      <a href="/de-de">Deutsch</a>
+    </li>
+      <li class="is-selected">
+      <a href="">English</a>
+    </li>
+      <li >
+      <a href="/es">Español</a>
+    </li>
+      <li >
+      <a href="/fr-fr">Français</a>
+    </li>
+      <li >
+      <a href="/it-it">Italiano</a>
+    </li>
+      <li >
+      <a href="/nl-nl">Nederlands</a>
+    </li>
+      <li >
+      <a href="/pl-pl">Polski</a>
+    </li>
+      <li >
+      <a href="/pt">Português</a>
+    </li>
+      <li >
+      <a href="/tr-tr">Türkçe</a>
+    </li>
+      <li >
+      <a href="/ar">النسخة العربية</a>
+    </li>
+      <li >
+      <a href="/th-th">ประเทศไทย</a>
+    </li>
+      <li >
+      <a href="/ja-jp">日本語</a>
+    </li>
+      <li >
+      <a href="/zh-cn">简体中文</a>
+    </li>
+      <li >
+      <a href="/zh-tw">繁體中文</a>
+    </li>
+      <li >
+      <a href="/ko-kr">한글</a>
+    </li>
+  </ul>
+
+    </div>
+    <!--mobile sub-menu -->
+    <div class="edl-navmenu edl-showhide--target" id="actionMenu__sect0" role="region" aria-labelledby="actionMenu__tabID_0" hidden>
+
+      <div class="edl-link-group">
+        <a class="edl-navmenu__mobile-back" href="#" aria-expanded="false">Back</a>
+        <div class="edl-showhide--container" aria-owns="actionNav__panels">
+          <a class="edl-showhide--trigger" aria-expanded="false" aria-controls="actionNav__sect0" id="actionNav__tabID_0" href="#"><i class="fal fa-user-alt"></i>Log in</a>
+          <a class="edl-showhide--trigger" aria-expanded="false" aria-controls="actionNav__sect1" id="actionNav__tabID_1" href="#"><i class="fal fa-globe"></i></a>
+          <!-- cta -->
+          <div class="edl-navbar_sub-menu-item edl-navbar_cta" aria-expanded="false" >
+                                    
+  <a class="edl-btn
+    reversed-cta reversed-cta__hollow"href="/contact">
+        <span class="btn-text">Contact us</span>  </a>
+          </div>
+        </div>
+      </div>
+      <div class="edl-link-group" id="actionNav__panels">
+
+        <!-- Action Menu Target 1 : Log In -->
+        <div class="edl-showhide--target" id="actionNav__sect0" role="region" aria-labelledby="actionNav__tabID_0" hidden>
+        </div>
+
+        <!-- Action Menu Target 2 : Site Select -->
+        <div class="edl-showhide--target" id="actionNav__sect1" role="region" aria-labelledby="actionNav__tabID_1" hidden>
+        </div>
+      </div>
+    </div>
+  </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="edl-nav-container">
+    <div class="edl-nav-row">
+              <div class="contextual-region">
+          
+            <!-- main_menu || menu_level == 0 -->
+      <div id="edlMainNav">
+        <div class="edl-navmenu edl-showhide--target" id="edlMainNav__sect0" role="region" aria-labelledby="edlMainNav__tabID_0" hidden>
+                            <!-- triggers -->
+          <div class="edl-link-group">
+            <a class="edl-navmenu__mobile-back" href="#" aria-expanded="false">Back</a>
+            <div class="edl-showhide--container" aria-owns="mainNav__panels">
+                                  <!-- menu_triggers || menu_level is 1 -->
+                 <a id="mainNav__tabID_0"
+          class="edl-showhide--trigger"
+          aria-controls="mainNav__sect0"
+          aria-expanded="false"
+           href="#"
+          >
+          By Institution
+      </a>
+               <a id="mainNav__tabID_1"
+          class="edl-showhide--trigger"
+          aria-controls="mainNav__sect1"
+          aria-expanded="false"
+           href="#"
+          >
+          For Customers
+      </a>
+               <a id="mainNav__tabID_2"
+          class=""
+          aria-controls="mainNav__sect2"
+          aria-expanded="false"
+           href="https://www.ebsco.com/find-my-organization"
+          >
+          Start Your Research
+      </a>
+               <a id="mainNav__tabID_3"
+          class="edl-showhide--trigger"
+          aria-controls="mainNav__sect3"
+          aria-expanded="false"
+           href="#"
+          >
+          Blogs
+      </a>
+               <a id="mainNav__tabID_4"
+          class=""
+          aria-controls="mainNav__sect4"
+          aria-expanded="false"
+           href="/title-lists"
+          >
+          Title Lists
+      </a>
+               <a id="mainNav__tabID_5"
+          class="edl-showhide--trigger"
+          aria-controls="mainNav__sect5"
+          aria-expanded="false"
+           href="#"
+          >
+          Resource Center
+      </a>
+      
+                          </div> <!-- // edl-showhide-container -->
+          </div> <!-- // edl-link-group -->
+                                      <!-- target panels -->
+          <div class="edl-link-group" id="mainNav__panels">
+                              <!-- menu_panels || menu_level is 1 -->
+            <!-- menu_panels || menu_level == 1 -->
+              <div class="edl-showhide--target" id="mainNav__sect0" role="region" aria-labelledby="mainNav__tabID_0" hidden="">
+          <!-- BEGIN the CONTENT DIV -->
+                    <ul class="panel-content panel-content--simple">
+                      <!-- BEFORE item.below for menu_level 1 -->
+                <!-- menu_panels || menu_level is 2 -->
+            <!-- menu_panels || menu_level > 1; menu_level is 2 -->
+      <!-- COLUMN GROUP -->
+                      <li class="nav-icon nav-icon--academic">
+                                              <a href="/academic-libraries">Academic Libraries</a>
+                                                <li class="nav-icon nav-icon--public">
+                                              <a href="/public-libraries">Public Libraries</a>
+                                                <li class="nav-icon nav-icon--health">
+                                              <a href="/health-care">Health Care</a>
+                                                <li class="nav-icon nav-icon--corp">
+                                              <a href="/corporations">Corporations</a>
+                                                <li class="nav-icon nav-icon--schools">
+                                              <a href="/schools">Schools</a>
+                                                <li class="nav-icon nav-icon--publishers">
+                                              <a href="/publishers-partnerships">Publishers</a>
+                                                <li class="nav-icon nav-icon--waiting">
+                                              <a href="/node/7776">Waiting Rooms</a>
+                                      </li>
+      <!-- // END COLUMN GROUP -->
+      
+            <!-- AFTER item.below for menu_level 1 -->
+                    </ul><!-- END the CONTENT DIV -->
+        </div> <!-- // end item.below for mainNav__sect0 -->
+              <div class="edl-showhide--target" id="mainNav__sect1" role="region" aria-labelledby="mainNav__tabID_1" hidden="">
+          <!-- BEGIN the CONTENT DIV -->
+                    <ul class="panel-content panel-content--grouped">
+                      <!-- BEFORE item.below for menu_level 1 -->
+                <!-- menu_panels || menu_level is 2 -->
+            <!-- menu_panels || menu_level > 1; menu_level is 2 -->
+      <!-- COLUMN GROUP -->
+                      <li>
+                          <ul>
+              <!-- menu_panels || menu_level is 3 -->
+            <!-- menu_panels || menu_level > 1; menu_level is 3 -->
+      <!-- COLUMN GROUP -->
+                      <li class="nav-icon nav-icon--support">
+                                              <a href="https://connect.ebsco.com/">Support</a>
+                                                <li class="nav-icon nav-icon--resources">
+                                              <a href="/promotional-materials">Promote Your Resources</a>
+                                                <li class="nav-icon nav-icon--training">
+                                              <a href="https://connect.ebsco.com/s/article/EBSCO-Training">Training</a>
+                                      </li>
+      <!-- // END COLUMN GROUP -->
+      
+          </ul>
+                              <li class="nav-icon nav-icon--login nav-icon--with-children">
+                      Sign In
+                                    <ul>
+              <!-- menu_panels || menu_level is 3 -->
+            <!-- menu_panels || menu_level > 1; menu_level is 3 -->
+      <!-- COLUMN GROUP -->
+                      <li class="">
+                                              <a href="https://www.ebsconet.com/">EBSCONET</a>
+                                                <li class="">
+                                              <a href="https://eadmin.ebscohost.com/EAdmin/login.aspx">EBSCOadmin</a>
+                                                <li class="">
+                                              <a href="https://ecm.ebscohost.com/User/Login">EBSCOhost Collection Manager</a>
+                                                <li class="">
+                                              <a href="https://www.gobi3.com/Pages/Login.aspx">GOBI</a>
+                                                <li class="">
+                                              <a href="https://experience.ebsco.com">EBSCO Experience Manager</a>
+                                                <li class="">
+                                              <a href="https://connect.ebsco.com/s/loginpage">EBSCO Connect</a>
+                                      </li>
+      <!-- // END COLUMN GROUP -->
+      
+          </ul>
+                    </li>
+      <!-- // END COLUMN GROUP -->
+      
+            <!-- AFTER item.below for menu_level 1 -->
+                    </ul><!-- END the CONTENT DIV -->
+        </div> <!-- // end item.below for mainNav__sect1 -->
+              <div class="edl-showhide--target" id="mainNav__sect2" role="region" aria-labelledby="mainNav__tabID_2" hidden="">
+          <!-- BEGIN the CONTENT DIV -->
+                    <ul class="">
+                    </ul><!-- END the CONTENT DIV -->
+        </div> <!-- // end item.below for mainNav__sect2 -->
+              <div class="edl-showhide--target" id="mainNav__sect3" role="region" aria-labelledby="mainNav__tabID_3" hidden="">
+          <!-- BEGIN the CONTENT DIV -->
+                    <ul class="panel-content panel-content--simple">
+                      <!-- BEFORE item.below for menu_level 1 -->
+                <!-- menu_panels || menu_level is 2 -->
+            <!-- menu_panels || menu_level > 1; menu_level is 2 -->
+      <!-- COLUMN GROUP -->
+                      <li class="nav-icon nav-icon--ebscopost-blog">
+                                              <a href="/blogs/ebscopost">EBSCOpost</a>
+                                                <li class="nav-icon nav-icon--health-blog">
+                                              <a href="https://www.ebsco.com/blogs/health-notes">EBSCO Health Notes</a>
+                                                <li class="nav-icon nav-icon--corp-blog">
+                                              <a href="https://blog.accel-5.com" target=_blank>Accel5 Blog</a>
+                                                <li class="nav-icon nav-icon--novelist-blog">
+                                              <a href="/blogs/novelist">NoveList Blog</a>
+                                      </li>
+      <!-- // END COLUMN GROUP -->
+      
+            <!-- AFTER item.below for menu_level 1 -->
+                    </ul><!-- END the CONTENT DIV -->
+        </div> <!-- // end item.below for mainNav__sect3 -->
+              <div class="edl-showhide--target" id="mainNav__sect4" role="region" aria-labelledby="mainNav__tabID_4" hidden="">
+          <!-- BEGIN the CONTENT DIV -->
+                    <ul class="">
+                    </ul><!-- END the CONTENT DIV -->
+        </div> <!-- // end item.below for mainNav__sect4 -->
+              <div class="edl-showhide--target" id="mainNav__sect5" role="region" aria-labelledby="mainNav__tabID_5" hidden="">
+          <!-- BEGIN the CONTENT DIV -->
+                    <ul class="panel-content panel-content--simple">
+                      <!-- BEFORE item.below for menu_level 1 -->
+                <!-- menu_panels || menu_level is 2 -->
+            <!-- menu_panels || menu_level > 1; menu_level is 2 -->
+      <!-- COLUMN GROUP -->
+                      <li class="nav-icon nav-icon--videos">
+                                              <a href="/resources?f%5B0%5D=res_type%3AVideo">Videos</a>
+                                                <li class="nav-icon nav-icon--ebrochures">
+                                              <a href="/resources?f%5B0%5D=res_type%3AMarket%20guide&amp;f%5B1%5D=res_type%3AProduct%20guide&amp;f%5B2%5D=res_type%3ASolution%20guide">Guides</a>
+                                                <li class="nav-icon nav-icon--infographics">
+                                              <a href="/resources?f%5B0%5D=res_type%3AInfographic">Infographics</a>
+                                                <li class="nav-icon nav-icon--webinars">
+                                              <a href="/news-center/events?event_market=All&amp;field_event_type_value%5B1%5D=1">Webinars</a>
+                                                <li class="nav-icon nav-icon--stories">
+                                              <a href="/resources?f%5B0%5D=res_type%3ASuccess%20story">Success Stories</a>
+                                                <li class="nav-icon nav-icon--whitepapers">
+                                              <a href="/resources?f%5B0%5D=res_type%3AWhite%20paper">White Papers</a>
+                                                <li class="nav-icon nav-icon--articles">
+                                              <a href="/resources?f%5B0%5D=res_type%3AArticle">Articles</a>
+                                      </li>
+      <!-- // END COLUMN GROUP -->
+      
+            <!-- AFTER item.below for menu_level 1 -->
+                    </ul><!-- END the CONTENT DIV -->
+        </div> <!-- // end item.below for mainNav__sect5 -->
+            
+                      </div> <!-- // edl-link-group -->
+                          </div> <!-- // edl-navmenu -->
+    </div> <!-- // edlMainNav -->
+  
+
+
+
+
+        </div>
+          </div>
+  </div>
+
+      
+<!-- ////////// EDL Overlay ////////// -->
+<div class="edl-overlay"></div>
+  
+
+
+  <!-- // ACTION MENU PANELS -->
+  <div id="actions__panels">
+    <!-- search -->
+    <div class="edl-showhide--target" id="navbar_search__sect0" role="region" aria-labelledby="navbar_search__tabID_0" hidden>
+      <form action="/search" method="get" id="views-exposed-form-acquia-search-page" accept-charset="UTF-8">
+  
+
+<p class="js-form-item form-item js-form-type-textfield form-item-search js-form-item-search form-no-label">
+              <input placeholder="Search ebsco.com" data-drupal-selector="edit-search" type="text" id="edit-search" name="search" value="" size="30" maxlength="128" class="form-text" autocomplete="off" aria-label="search" />
+
+        </p>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions">
+        
+  <button class="edl-btn
+    edl-btn--form-submit button js-form-submit form-submit" data-drupal-selector="edit-submit-acquia-search" type="submit" id="edit-submit-acquia-search" value="Search" class="button js-form-submit form-submit">
+    <i class="fal fa-search"></i>      </button>
+
+
+</div>
+
+
+</form>
+
+    </div>
+    <!-- login -->
+    <div class="edl-showhide--target" id="navbar_login__sect0" role="region" aria-labelledby="navbar_login__tabID_0" hidden>
+      <div class="target-content">
+                                        <h3>Sign In</h3>
+
+  <div class="column-group">
+    <h4>Librarians/Admins</h4>
+          
+<!-- ////////// EDL LINK GROUP ////////// -->
+<div class="edl-link-group
+    "
+  
+  >
+
+
+  <ul>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://www.ebsconet.com/"
+   target="_blank"  >
+    EBSCONET
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://eadmin.ebscohost.com/EAdmin/login.aspx"
+   target="_blank"  >
+    EBSCOadmin
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://ecm.ebscohost.com/User/Login"
+   target="_blank"  >
+    EBSCOhost Collection Manager
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://www.gobi3.com/Pages/Login.aspx"
+   target="_blank"  >
+    GOBI
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://experience.ebsco.com"
+   target="_blank"  >
+    EBSCO Experience Manager
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://connect.ebsco.com/s/loginpage"
+   target="_blank"  >
+    EBSCO Connect
+</a>
+          </li>
+	  </ul>
+</div>
+      </div>
+  <div class="column-separator">
+    <hr />
+  </div>
+<div class="column-group-wrapper">
+  <div class="column-group">
+    <h4>Users</h4>
+          
+<!-- ////////// EDL LINK GROUP ////////// -->
+<div class="edl-link-group
+    "
+  
+  >
+
+
+  <ul>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="/find-my-organization"
+    >
+    Start your research
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="/products/ebsco-mobile-app-research-anytime-anywhere"
+    >
+    EBSCO Mobile App
+</a>
+          </li>
+	  </ul>
+</div>
+      </div>
+  <div class="column-group">
+    <h4>Clinical Decisions Users</h4>
+          
+<!-- ////////// EDL LINK GROUP ////////// -->
+<div class="edl-link-group
+    "
+  
+  >
+
+
+  <ul>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://login.ebsco.zone/login?state=hKFo2SBnMWNYY2o0UWEtQ1RHRGQ2REc2V3dGME94Wk1ERlJMN6FupWxvZ2luo3RpZNkgV2YzOVI4SG1CN21MQWRIZFlaWkJmNEZOYkotVkZpb1OjY2lk2SBQWVc3d2JMTllxaTdRUG9Zb0oxZkM2NW9vSkd0VXo4eg&amp;client=PYW7wbLNYqi7QPoYoJ1fC65ooJGtUz8z&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fwww.ebsco.com%2Fapi&amp;redirect_uri=https%3A%2F%2Fwww.dynamedex.com%2Fauth0-login&amp;response_type=code&amp;scope=openid%20email%20profile%20offline_access%20read%3Abasic%20read%3Admx"
+   target="_blank"  >
+    DynaMedex
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://login.ebsco.zone/login?state=hKFo2SBRRkZHN0ZJcDFSdzBjZkxCVDhmT2ZWUUFvT3hIcVpmS6FupWxvZ2luo3RpZNkgdFZWTExMMUNkdFljYWY0VDdPWkxBTXhBOFpjS3VSMmyjY2lk2SA1VU5vV3Bmc2pCWTVTTHZXRzc5MlhJN1pyUmVWeXlvMg&amp;client=5UNoWpfsjBY5SLvWG792XI7ZrReVyyo2&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fwww.ebsco.com%2Fapi&amp;redirect_uri=https%3A%2F%2Fwww.dynamed.com%2Fauth0-login&amp;response_type=code&amp;scope=openid%20email%20profile%20offline_access%20read%3Abasic"
+   target="_blank"  >
+    DynaMed
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://login.ebsco.zone/login?state=hKFo2SBRRkZHN0ZJcDFSdzBjZkxCVDhmT2ZWUUFvT3hIcVpmS6FupWxvZ2luo3RpZNkgdFZWTExMMUNkdFljYWY0VDdPWkxBTXhBOFpjS3VSMmyjY2lk2SA1VU5vV3Bmc2pCWTVTTHZXRzc5MlhJN1pyUmVWeXlvMg&amp;client=5UNoWpfsjBY5SLvWG792XI7ZrReVyyo2&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fwww.ebsco.com%2Fapi&amp;redirect_uri=https%3A%2F%2Fwww.dynamed.com%2Fauth0-login&amp;response_type=code&amp;scope=openid%20email%20profile%20offline_access%20read%3Abasic"
+   target="_blank"  >
+    DynaMed Decisions
+</a>
+          </li>
+	    <li>
+		
+
+<a class="edl-link
+  "
+  
+  href="https://login.ebsco.zone/login?state=hKFo2SBSbEtSUUI2eXVYNUdOU2c0dzJxQkpGX05QX3UzVS1iTqFupWxvZ2luo3RpZNkgUW80Z0lhZUdjSnVjSVRXVFJxRTVCMHRHTWZwRVQycXWjY2lk2SBPOVoxUUo1emtWc1VDU0dwc1pqdGxla1BJNmNJRU8zOQ&amp;client=O9Z1QJ5zkVsUCSGpsZjtlekPI6cIEO39&amp;protocol=oauth2&amp;audience=https%3A%2F%2Fwww.ebsco.com%2Fapi&amp;redirect_uri=https%3A%2F%2Fwww.dynahealth.com%2Fauth0-login&amp;response_type=code&amp;scope=openid%20email%20profile%20offline_access%20read%3Askills%20read%3Anursing-skills%20read%3Ahealth-profession%20read%3Apatient-instruction%20read%3Askill-notes%20read%3Aworkplace-skills%20search%3ADHSKILL%20read%3Ahidden-skills%20read%3Adhuser"
+   target="_blank"  >
+    Dynamic Health
+</a>
+          </li>
+	  </ul>
+</div>
+      </div>
+</div>
+      </div>
+    </div>
+
+    <!-- site select -->
+    <div class="edl-showhide--target" id="navbar_site__sect0" role="region" aria-labelledby="navbar_site__tabID_0" hidden>
+      
+
+
+<ul class="site-select">
+      <li >
+      <a href="/cs-cz">Čeština</a>
+    </li>
+      <li >
+      <a href="/de-de">Deutsch</a>
+    </li>
+      <li class="is-selected">
+      <a href="">English</a>
+    </li>
+      <li >
+      <a href="/es">Español</a>
+    </li>
+      <li >
+      <a href="/fr-fr">Français</a>
+    </li>
+      <li >
+      <a href="/it-it">Italiano</a>
+    </li>
+      <li >
+      <a href="/nl-nl">Nederlands</a>
+    </li>
+      <li >
+      <a href="/pl-pl">Polski</a>
+    </li>
+      <li >
+      <a href="/pt">Português</a>
+    </li>
+      <li >
+      <a href="/tr-tr">Türkçe</a>
+    </li>
+      <li >
+      <a href="/ar">النسخة العربية</a>
+    </li>
+      <li >
+      <a href="/th-th">ประเทศไทย</a>
+    </li>
+      <li >
+      <a href="/ja-jp">日本語</a>
+    </li>
+      <li >
+      <a href="/zh-cn">简体中文</a>
+    </li>
+      <li >
+      <a href="/zh-tw">繁體中文</a>
+    </li>
+      <li >
+      <a href="/ko-kr">한글</a>
+    </li>
+  </ul>
+
+    </div>
+    <!--mobile sub-menu -->
+    <div class="edl-navmenu edl-showhide--target" id="actionMenu__sect0" role="region" aria-labelledby="actionMenu__tabID_0" hidden>
+
+      <div class="edl-link-group">
+        <a class="edl-navmenu__mobile-back" href="#" aria-expanded="false">Back</a>
+        <div class="edl-showhide--container" aria-owns="actionNav__panels">
+          <a class="edl-showhide--trigger" aria-expanded="false" aria-controls="actionNav__sect0" id="actionNav__tabID_0" href="#"><i class="fal fa-user-alt"></i>Log in</a>
+          <a class="edl-showhide--trigger" aria-expanded="false" aria-controls="actionNav__sect1" id="actionNav__tabID_1" href="#"><i class="fal fa-globe"></i></a>
+          <!-- cta -->
+          <div class="edl-navbar_sub-menu-item edl-navbar_cta" aria-expanded="false" >
+                                    
+  <a class="edl-btn
+    reversed-cta reversed-cta__hollow"href="/contact">
+        <span class="btn-text">Contact us</span>  </a>
+          </div>
+        </div>
+      </div>
+      <div class="edl-link-group" id="actionNav__panels">
+
+        <!-- Action Menu Target 1 : Log In -->
+        <div class="edl-showhide--target" id="actionNav__sect0" role="region" aria-labelledby="actionNav__tabID_0" hidden>
+        </div>
+
+        <!-- Action Menu Target 2 : Site Select -->
+        <div class="edl-showhide--target" id="actionNav__sect1" role="region" aria-labelledby="actionNav__tabID_1" hidden>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+        </div>
+      </div>
+      </header>
+  <!-- /header -->
+
+  <!-- ______________________ Pre content _______________________ -->
+      <div class="clearfix pre-content" id="pre-content">
+        <div class="region region-pre-content">
+    
+
+<section class="title-bar__blog blog-nav container">
+  <div class="row">
+    <nav role="navigation" aria-labelledby="block-views-block-blogs-block-1" class="views-element-container block block-menu navigation block-system-menublock menu--blogs-block-1" id="block-views-block-blogs-block-1" data-block-plugin-id="views_block:blogs-block_1">
+                    <div><div class="view view-blogs view-id-blogs view-display-id-block_1 js-view-dom-id-5bff2f19a6a15243363377216b26fc72fd8a4bad2e0e21a4abcb742ae69eda31">
+  
+    
+      
+      <div class="view-content">
+        
+  <a href="/blogs/health-notes">
+  <div class="h1">
+          Health Notes
+      </div>
+</a>
+
+<section class="category-nav container">
+  <div class="row">
+    <input id="dropdown-bar" type="checkbox" />
+    <label for="dropdown-bar" class="select">
+              All Categories
+            </label>
+    <ul class="dropdown">
+      <li>
+        <div class="views-field views-field-field-blog-category">
+          <div class="field-content">
+            <a href="/blogs/health-notes">All Categories</a>
+          </div>
+        </div>
+      </li>
+                                                <li class="">
+          <div class="views-field views-field-field-blog-category"><div class="field-content"><a href="/blogs/health-notes/category/nursing" class="category-nav-item">Nursing</a></div></div>
+        </li>
+                                                <li class="">
+          <div class="views-field views-field-field-blog-category"><div class="field-content"><a href="/blogs/health-notes/category/health-professions" class="category-nav-item">Health Professions</a></div></div>
+        </li>
+                                                <li class="">
+          <div class="views-field views-field-field-blog-category"><div class="field-content"><a href="/blogs/health-notes/category/research" class="category-nav-item">Research</a></div></div>
+        </li>
+                                                <li class="">
+          <div class="views-field views-field-field-blog-category"><div class="field-content"><a href="/blogs/health-notes/category/medical" class="category-nav-item">Medical</a></div></div>
+        </li>
+          </ul>
+  </div>
+</section>
+
+    </div>
+  
+          </div>
+</div>
+
+          </nav>
+  </div>
+</section>
+
+<section class="blog-search container">
+  <div class="row">
+    <div class="col-content--search">
+      <div class="views-exposed-form block block-views block-views-exposed-filter-blockblog-search-healthnotes" data-drupal-selector="views-exposed-form-blog-search-healthnotes" id="block-exposedformblog-searchhealthnotes" data-block-plugin-id="views_exposed_filter_block:blog_search-healthnotes">
+                  <form action="/blogs/health-notes/search" method="get" id="views-exposed-form-blog-search-healthnotes" accept-charset="UTF-8">
+  <div class="form--inline clearfix">
+  <p class="js-form-item form-item js-form-type-textfield form-item-search js-form-item-search form-no-label">
+        <input placeholder="Search blog" data-drupal-selector="edit-search" type="text" id="edit-search--3" name="search" value="" size="30" maxlength="128" class="form-text" autocomplete="on" />
+
+        </p>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper" id="edit-actions--3">
+    
+  <button class="edl-btn
+    edl-btn--form-submit button js-form-submit form-submit" data-drupal-selector="edit-submit-blog-search" type="submit" id="edit-submit-blog-search" value="Apply" class="button js-form-submit form-submit">
+    <i class="fal fa-search"></i>      </button>
+
+
+</div>
+
+</div>
+
+</form>
+
+              </div>
+    </div>
+  </div>
+</section>
+
+  </div>
+
+    </div>
+
+  
+  <!-- ______________________ MAIN _______________________ -->
+
+  <div class="clearfix" id="main">
+    <section class="container">
+      <div class="row">
+
+                <!-- /sidebar-first -->
+
+        <section id="content">
+
+          
+          <div class="blog-main-view" id="content-area">
+              <div class="region region-content">
+    <div data-drupal-messages-fallback class="hidden"></div><div id="block-cog-ebsco-content" data-block-plugin-id="system_main_block" class="block block-system block-system-main-block">
+  
+    
+      <div class="views-element-container"><div class="view view-blogs view-id-blogs view-display-id-page_1 js-view-dom-id-f1c14dd7c31f9c9ab145e2bce64b9712a4c81c70b3f3eda45adb19c0f3b35b95">
+  
+    
+      
+      <div class="view-content">
+          <div class="views-row">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2551011/ebm-focus-skin-cancer-screening-theres-no-i-recommend"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/woman-patient-doctor-chart-blog-image-780.jpg" alt="woman patient doctor chart blog image    " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2551011/ebm-focus-skin-cancer-screening-theres-no-i-recommend" hreflang="en">EBM Focus: Skin Cancer Screening – There’s No “I” in Recommend</a>
+          <div class="post-date">
+
+                                18 July 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+    <div class="views-row">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2517806/adverse-health-effects-poor-air-quality-growing-concern"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/air-quality-and-health-blog-image-780.png" alt="air quality and health blog image    " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2517806/adverse-health-effects-poor-air-quality-growing-concern" hreflang="en">The Adverse Health Effects of Poor Air Quality: A Growing Concern </a>
+          <div class="post-date">
+
+                                27 June 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+    <div class="views-row">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2489000/brasilia-medical-association-and-dynamed-working-together-provide"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/ambr-dynamed-dr-nasser-blog-image-780-EN.jpg" alt="ambr dynamed dr nasser blog image  EN   " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2489000/brasilia-medical-association-and-dynamed-working-together-provide" hreflang="en">The Brasília Medical Association and DynaMed — Working Together to Provide Efficient, Reliable Clinical Decision Support</a>
+          <div class="post-date">
+
+                                20 June 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+    <div class="views-row">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2482150/support-warriors-world-sickle-cell-day"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/World-Sickle-Cell-Day-blog-image-780.jpg" alt="World Sickle Cell Day blog image    " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2482150/support-warriors-world-sickle-cell-day" hreflang="en">Support the Warriors on World Sickle Cell Day</a>
+          <div class="post-date">
+
+                                15 June 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+    <div class="views-row">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2507504/ebm-focus-when-to-start-breast-cancer-screening-devil-in-details"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/female-nurse-educating-two-female-patients-blog-image-780.jpg" alt="female nurse educating two female patients blog image    " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2507504/ebm-focus-when-to-start-breast-cancer-screening-devil-in-details" hreflang="en">EBM Focus: When to Begin Breast Cancer Screening; The Devil is in the Details</a>
+          <div class="post-date">
+
+                                8 June 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+    <div class="views-row">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2433487/celiac-disease-beyond-gluten-and-gastrointestinal-reactions"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/Celiac-Disease-Discussion-Alan-Ehrlich.jpg" alt="Celiac Disease Discussion Alan Ehrlich   " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2433487/celiac-disease-beyond-gluten-and-gastrointestinal-reactions" hreflang="en">Celiac Disease: Beyond Gluten and Gastrointestinal Reactions</a>
+          <div class="post-date">
+
+                                30 May 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+    <div class="views-row">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2474080/get-know-ebscos-dynamic-health-clinical-editors-eliza-schub-rn"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/get-to-know-EBSCOs-Dynamic-Health-Eliza-Schub-blog-image-780.jpg" alt="get to know EBSCOs Dynamic Health Eliza Schub blog image    " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2474080/get-know-ebscos-dynamic-health-clinical-editors-eliza-schub-rn" hreflang="en">Get to Know EBSCO’s Dynamic Health Clinical Editors: Eliza Schub, RN</a>
+          <div class="post-date">
+
+                                25 May 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+    <div class="views-row">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2482602/ebm-focus-food-thought-diet-dementia-prevention"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/healthy-meal-nutrition-blog-image-template-780.jpg" alt="healthy meal nutrition blog image template    " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2482602/ebm-focus-food-thought-diet-dementia-prevention" hreflang="en">EBM Focus: Food for Thought – A Diet for Dementia Prevention?</a>
+          <div class="post-date">
+
+                                24 May 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+    <div class="views-row">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2442884/nurturing-connections-nursepatient-bond"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/nurses-patient-bond-child-blog-image-780.jpg" alt="nurses patient bond child blog image    " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2442884/nurturing-connections-nursepatient-bond" hreflang="en">Nurturing Connections: The Nurse/Patient Bond</a>
+          <div class="post-date">
+
+                                23 May 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+    <div class="views-row">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2457479/key-takeaways-healthcare-information-and-management-systems-society"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/HIMSS-blog-image-780.jpg" alt="HIMSS blog image    " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2457479/key-takeaways-healthcare-information-and-management-systems-society" hreflang="en">Key Takeaways from the Healthcare Information and Management Systems Society (HIMSS) 2023 Conference </a>
+          <div class="post-date">
+
+                                18 May 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+    <div class="views-row views-row-last">
+    <div class="card-view">
+  <div class="card-image">
+    <a href="/blogs/health-notes/2442841/calling-all-nurses-tips-prioritizing-work-life-balance-and-wellness"><article>
+  
+  
+                      
+        <img src="/sites/default/files/acquiadam-assets/nurses-work-life-balance-blog-image-780.jpg" alt="nurses work life balance blog image    " />
+  </article>
+</a>
+  </div>
+  <div class="card-caption">
+    <a href="/blogs/health-notes/2442841/calling-all-nurses-tips-prioritizing-work-life-balance-and-wellness" hreflang="en">Calling All Nurses! Tips on Prioritizing Work-Life Balance and Wellness</a>
+          <div class="post-date">
+
+                                17 May 2023
+        
+      </div>
+      </div>
+</div>
+
+  </div>
+
+    </div>
+  
+      
+  <nav class="resources-pager" role="navigation" aria-labelledby="pagination-heading">
+    <ul class="pager__items js-pager__items">
+                                                        <li class="pager__item is-active">
+                                          <a href="?page=0" title="Current page">
+            <span class="visually-hidden">
+              Current page
+            </span>1</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?page=1" title="Go to page 2">
+            <span class="visually-hidden">
+              Page
+            </span>2</a>
+        </li>
+              <li class="pager__item">
+                                          <a href="?page=2" title="Go to page 3">
+            <span class="visually-hidden">
+              Page
+            </span>3</a>
+        </li>
+                          <li class="pager__item pager__item--ellipsis" role="presentation">&hellip;</li>
+                          <li class="pager__item pager__item--next">
+          <a href="?page=1" title="Go to next page" rel="next">
+            <!-- <span class="visually-hidden">Next page</span>
+            <span aria-hidden="true">››</span> -->
+            <i class="fal fa-chevron-right"></i>
+          </a>
+        </li>
+                          <li class="pager__item pager__item--last">
+          <a href="?page=27" title="Go to last page">
+            <!-- <span class="visually-hidden">Last page</span>
+            <span aria-hidden="true">Last »</span> -->
+            <i class="fal fa-chevron-right"></i>
+          </a>
+        </li>
+          </ul>
+  </nav>
+
+          </div>
+</div>
+
+  </div>
+
+  </div>
+
+          </div>
+
+          
+
+        </section>
+        <!-- /content-inner /content -->
+
+                  <aside class="sidebar-second sidebars" id="sidebar-second">
+              <div class="region region-sidebar-second">
+    
+
+<nav role="navigation" aria-labelledby="block-blogsubscribehealth" id="block-blogsubscribehealth" data-block-plugin-id="system_menu_block:blog-subscribe--health" class="block block-menu navigation block-system-menublock menu--blog-subscribe--health">
+      
+        <div class="blog-subscribe-block">
+  
+  
+        <h5>Subscribe</h5>
+  
+                    <ul class="menu">
+                  <li>
+          <a href="/blogs/subscribe/health-notes" data-drupal-link-system-path="node/32111">Get Updates</a>
+                  </li>
+              <li>
+          <a href="/blogs/health-notes/rss" data-drupal-link-system-path="blogs/health-notes/rss">RSS Feed</a>
+                  </li>
+          </ul>
+    <hr>
+      
+
+  </div>
+
+  </nav>
+
+<nav role="navigation" aria-labelledby="block-blogpopulartagshealth" id="block-blogpopulartagshealth" data-block-plugin-id="system_menu_block:blog-popular-tags--health" class="block block-menu navigation block-system-menublock menu--blog-popular-tags--health">
+      
+        
+
+<h5>Popular Tags</h5>
+        <ul class="menu">
+            <li>
+        <a href="/blogs/health-notes/tag/clinical-decision-support" data-drupal-link-system-path="blogs/health-notes/tag/clinical-decision-support">Clinical decision support</a>
+              </li>
+          <li>
+        <a href="/blogs/health-notes/tag/evidence%E2%80%93based-medicine" data-drupal-link-system-path="blogs/health-notes/tag/evidence–based-medicine">Evidence-based medicine</a>
+              </li>
+          <li>
+        <a href="/blogs/health-notes/tag/thought-leadership" data-drupal-link-system-path="blogs/health-notes/tag/thought-leadership">Thought leadership</a>
+              </li>
+          <li>
+        <a href="/blogs/health-notes/tag/ebmfocus" data-drupal-link-system-path="blogs/health-notes/tag/ebmfocus">EBMFocus</a>
+              </li>
+          <li>
+        <a href="/blogs/health-notes/tag/dynamed" data-drupal-link-system-path="blogs/health-notes/tag/dynamed">DynaMed</a>
+              </li>
+      </ul>
+    
+
+
+  </nav>
+<div id="tag__panels"  class="views-element-container block block-views block-views-blockblogs-block-2" id="block-views-block-blogs-block-2" data-block-plugin-id="views_block:blogs-block_2">
+  <div class="edl-showhide--target" id="tags__sect0" role="region" aria-labelledby="tags__tabID_0" hidden>
+    
+          <h5>All Tags</h5>
+        
+          <div><div class="view view-blogs view-id-blogs view-display-id-block_2 js-view-dom-id-094047ed487d06109cd7c916193d496402b48d1e92cec16011545bca3eff0cbf">
+  
+    
+      
+      <div class="view-content">
+      <ul class="menu">
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/academic-libraries">Academic libraries</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/care-team">Care team</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/cinahl-complete">CINAHL Complete</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/clinical-decision-support">Clinical decision support</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/clinicians">Clinicians</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/conferences">Conferences</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/customer-support">Customer support</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/databases">Databases</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/diversity">Diversity</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/dynamed">DynaMed</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/dynamed-shared-decisions">DynaMed Shared Decisions</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/dynamic-health">Dynamic Health</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/ebmfocus">EBMFocus</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/ebsco-discovery-service">EBSCO Discovery Service</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/ebsco-discovery-service-health">EBSCO Discovery Service Health</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/evidence%E2%80%93based-medicine">Evidence–based medicine</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/gideon">GIDEON</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/health-professions">Health professions</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/innovations">Innovations</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/isabel">Isabel</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/medical-librarians">Medical librarians</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/medline-complete">MEDLINE Complete</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/nursing">Nursing</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/nursing-reference-center-plus">Nursing Reference Center Plus</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/nutrition-reference-center">Nutrition Reference Center</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/partner">Partner</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/partners">Partners</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/patient-care">Patient care</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/research">Research</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/shared-decision%E2%80%93making">Shared decision–making</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/subscription-services">Subscription services</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/technology">Technology</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/thought-leadership">Thought leadership</a></span></span>
+  </li>
+            <li class="">
+    <span class="views-field views-field-field-blog-tags"><span class="field-content"><a href="/blogs/health-notes/tag/user-experience">User experience</a></span></span>
+  </li>
+</ul>
+
+    </div>
+  
+          </div>
+</div>
+
+      </div>
+</div>
+
+<div class="edl-showhide--container" aria-owns="tag__panels">
+  <a class="edl-showhide--trigger trigger--is-toggle" aria-expanded="false" aria-controls="tags__sect0" id="tags__tabID_0" href="#">
+  <span class="show-tags">Show all tags</span>
+  <span class="hide-tags">Hide all tags</span>
+  </a>
+</div>
+
+  </div>
+
+          </aside>
+                <!-- /sidebar-second -->
+
+      </div>
+    </section>
+  </div>
+  <!-- /main -->
+
+  <!-- ______________________ Post content _______________________ -->
+
+      <div class="clearfix post-content" id="post-content">
+        <div class="region region-post-content">
+    <div id="block-healthnotesblogsubscribe" data-block-plugin-id="block_content:d9352c52-a0a9-4c78-8f4b-f6acddd3f97b" class="block block-block-content block-block-contentd9352c52-a0a9-4c78-8f4b-f6acddd3f97b">
+  
+    
+      
+            <div class="field field--name-field-referenced-node field--type-entity-reference field--label-hidden field__item">
+<section class="container blog-cta">
+  <div class="row">
+    <div class="blog-cta__content">
+      <article  role="article" class="entity--type-node node node--type-call-to-action node--view-mode-default global-cta-blog">
+        <div class="content col-content--small-no-padding">
+          <h2 class="h3">
+            <div class="field field--name-field-cta-heading field--type-string field--label-hidden field__item">Get the latest library news and insights from EBSCO in your inbox</div>
+      </h3>
+          
+  
+              
+  <a class="edl-btn
+    reversed-cta field field--name-field-cta-link field--type-link field--label-hidden field__item" class="field field--name-field-cta-link field--type-link field--label-hidden field__item"href="/blogs/subscribe/health-notes">
+        <span class="btn-text">Subscribe</span>  </a>
+  
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+</div>
+      
+  </div>
+
+  </div>
+
+    </div>
+  
+  <!-- ______________________ FOOTER _______________________ -->
+
+      <footer id="footer">
+            <section class="region region-footer">
+      <div class="row footer__row">
+        <div class="content footer__content">
+        
+
+<nav role="navigation" aria-label="ebsco footer menu" id="block-cog-ebsco-footer" data-block-plugin-id="system_menu_block:footer" class="block block-menu navigation block-system-menublock menu--footer">
+      
+        <div class="footer_menu_logo">
+        
+
+<a class="edl-site-logo "
+  href="/">
+<svg role="" aria-labelledby="title" width="119" height="22" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 119 27" style="enable-background:new 0 0 119 27;" xml:space="preserve">
+  <g>
+    <title id="title"></title>
+    <path id="XMLID_25_" class="st0" d="M1,25.692v-1.462c2.564,0,3.29-0.769,3.29-2.846V5.616c0-2.077-0.727-2.846-3.29-2.846V1.308
+      h18.633l0.995,3.462c0.115,0.385,0.191,0.731,0.191,0.885c0,0.192-0.344,0.577-0.765,0.577c-0.268,0-0.383-0.154-0.803-0.808
+      c-1.722-2.577-3.941-3.038-7.346-3.038c-2.372,0-2.64,0.385-2.64,1.923v7.615h3.023c2.219,0,3.061-0.5,3.558-2.731
+      c0.077-0.423,0.153-0.462,0.727-0.5c0.459,0,0.65,0.115,0.65,0.731v7.538c0,0.385-0.306,0.5-0.727,0.5
+      c-0.421,0-0.497-0.115-0.536-0.269c-1.033-3.385-1.683-3.577-3.673-3.577H9.264v8.192c0,2.039,0.383,2.423,3.941,2.423
+      c4.706,0,6.007-1.423,7.92-4.731c0.115-0.192,0.191-0.308,0.65-0.308c0.421,0,0.574,0.115,0.574,0.269
+      c0,0.154-0.038,0.346-0.076,0.692l-0.842,5.539H1z"/>
+    <path id="XMLID_21_" class="st0" d="M28.624,5.616c0-2.077-0.727-2.846-3.52-2.846V1.308h9.871c6.198,0,9.565,2.077,9.565,5.731
+      c0,3.423-3.214,4.962-5.433,5.615v0.077c4.591,0.577,6.811,3.654,6.811,6.5c0,2.616-1.99,6.462-8.877,6.462H25.104v-1.462
+      c2.793,0,3.52-0.769,3.52-2.846V5.616z M33.598,10.654c0,1.116,0.536,1.5,2.104,1.5c2.372,0,4.247-1.039,4.247-4.731
+      c0-3.577-1.683-4.654-4.438-4.654c-1.531,0-1.913,0.615-1.913,2V10.654z M33.598,21.577c0,2.038,0.612,2.654,2.908,2.654
+      c3.061,0,4.591-2.154,4.591-5.231c0-3.692-2.372-5.385-5.586-5.385c-1.607,0-1.913,0.308-1.913,1.846V21.577z"/>
+    <path id="XMLID_19_" class="st0" d="M63.517,6.385c0,0.808-0.153,0.962-0.65,0.962c-0.421,0-0.574-0.231-1.071-1.231
+      c-0.88-1.808-2.831-3.654-5.28-3.654c-2.219,0-4.132,1.539-4.132,3.616c0,5.423,12.32,4.038,12.32,12.461
+      c0,3.385-1.875,7.462-8.953,7.462c-2.028,0-5.395-0.731-6.734-1.462c-0.268-0.346-0.612-3.385-0.612-5.039
+      c0-0.808,0.153-1.077,0.804-1.077s0.803,0.077,1.071,1.077c0.421,1.5,2.028,5.039,6.198,5.039c2.449,0,4.63-1.231,4.63-3.885
+      c0-5.731-12.32-5-12.32-12.654c0-4.769,4.591-7,8.341-7c3.597,0,6.007,1.077,6.237,1.385c0.038,0.538,0.153,1.038,0.153,2.538
+      V6.385z"/>
+    <path id="XMLID_17_" class="st0" d="M89.573,21.461c-0.115,1-0.268,1.423-0.612,1.846C88.387,24,85.287,26,79.893,26
+      c-7.155,0-12.894-5.615-12.894-12.5S72.738,1,79.893,1c4.4,0,9.489,1.846,9.489,3.577c0,1.692-0.268,3.154-0.268,3.769
+      c0,0.231-0.191,0.769-0.65,0.769c-0.383,0-0.536-0.115-1.071-1.538c-1.263-3.269-4.017-5.116-7.499-5.116
+      c-3.405,0-7.537,2.923-7.537,11.039c0,8.115,4.132,11.038,8.685,11.038c4.209,0,6.734-4,7.232-5.231
+      c0.344-0.808,0.459-0.885,0.918-0.885c0.383,0,0.612,0.192,0.612,0.5c0,0.231-0.038,0.577-0.076,1.192L89.573,21.461z"/>
+    <path id="XMLID_14_" class="st0" d="M105.106,1C112.261,1,118,6.616,118,13.5S112.261,26,105.106,26s-12.894-5.615-12.894-12.5
+      S97.951,1,105.106,1z M105.106,24.538c3.405,0,7.537-2.923,7.537-11.038c0-8.116-4.132-11.039-7.537-11.039
+      S97.568,5.385,97.568,13.5C97.568,21.615,101.701,24.538,105.106,24.538z"/>
+  </g>
+</svg>
+</a>
+  </div>
+              <ul class="footer__menu nav__menu menu">
+                          <li class="footer__column-1 footer__primary-menu">
+          <span class="column">Column 1</span>
+                                    <ul class="menu">
+                          <li class="menu-item__about-ebsco">
+          <span class="parent--about parent no-link icon--white footer__nav-link fnExpander">About EBSCO</span>
+                                    <ul class="menu">
+                          <li>
+          <a href="/about" class="item" data-drupal-link-system-path="node/2246">Company</a>
+                  </li>
+                      <li>
+          <a href="/offices" class="item" target="_self" data-drupal-link-system-path="node/8016">Offices</a>
+                  </li>
+                      <li>
+          <a href="/about/leadership" class="item" target="_self" data-drupal-link-system-path="about/leadership">Leadership</a>
+                  </li>
+                      <li>
+          <a href="/about/culture" class="item" target="_self" data-drupal-link-system-path="node/42286">Our Culture</a>
+                  </li>
+                      <li>
+          <a href="/about/diversity-equity-inclusion" class="item" target="_self" data-drupal-link-system-path="node/42276">Diversity, Equity &amp; Inclusion</a>
+                  </li>
+                      <li>
+          <a href="/about/corporate-responsibility" target="_self" data-drupal-link-system-path="node/20201">Corporate Responsibility</a>
+                  </li>
+                      <li>
+          <a href="/gdpr" target="_self" data-drupal-link-system-path="node/8496">Privacy &amp; Security</a>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+                  </li>
+                      <li class="footer__column-2 footer__primary-menu">
+          <span class="column">Column 2</span>
+                                    <ul class="menu">
+                          <li class="menu-item__technology">
+          <span class="parent--technology parent no-link icon--white footer__nav-link fnExpander">Technology</span>
+                                    <ul class="menu">
+                          <li>
+          <a href="/technology/open-source" class="item" target="_self" data-drupal-link-system-path="node/3436">Open Source</a>
+                  </li>
+                      <li>
+          <a href="/open-for-research" target="_self" data-drupal-link-system-path="node/42086">Open for Research</a>
+                  </li>
+                      <li>
+          <a href="/technology/accessibility" class="item" target="_self" data-drupal-link-system-path="node/3441">Accessibility</a>
+                  </li>
+                      <li>
+          <a href="/technology/user-experience" class="item" target="_self" data-drupal-link-system-path="node/3446">User Experience</a>
+                  </li>
+                      <li>
+          <a href="/open-access" class="parent" target="_self" data-drupal-link-system-path="node/3391">Open Access</a>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+                  </li>
+                      <li class="footer__column-3 footer__primary-menu">
+          <span class="column">Column 3</span>
+                                    <ul class="menu">
+                          <li class="menu-item__helpful-links">
+          <span class="parent--helpful-links no-link icon--white footer__nav-link fnExpander">Helpful Links</span>
+                                    <ul class="menu">
+                          <li>
+          <a href="/resources" class="parent" target="_self" data-drupal-link-system-path="resource-search">Resources</a>
+                  </li>
+                      <li>
+          <a href="/news-center" class="parent" target="_self" data-drupal-link-system-path="node/12681">News Center</a>
+                  </li>
+                      <li>
+          <a href="https://careers.ebscoind.com/ebscoinformationservices" class="parent" target="_blank">Careers</a>
+                  </li>
+                      <li>
+          <a href="https://www.ebsco.com/publishers-partnerships" class="parent" target="_blank">For Publishers &amp; Partners</a>
+                  </li>
+                      <li>
+          <a href="https://connect.ebsco.com" class="parent" target="_blank">Support</a>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+                  </li>
+                      <li class="footer__column-4 footer__primary-menu">
+          <span class="column">Column 4</span>
+                                    <ul class="menu">
+                          <li class="menu-item__sign-in">
+          <span class="parent--helpful-links no-link icon--white footer__nav-link fnExpander">Sign In</span>
+                                    <ul class="menu">
+                          <li>
+          <a href="https://www.ebsconet.com/" class="item" target="_blank">EBSCONET</a>
+                  </li>
+                      <li>
+          <a href="http://eadmin.ebscohost.com/EAdmin/login.aspx" class="item" target="_blank">EBSCOadmin</a>
+                  </li>
+                      <li>
+          <a href="https://ecm.ebscohost.com/User/Login" class="item" target="_blank">EBSCOhost Collection Manager</a>
+                  </li>
+                      <li>
+          <a href="https://www.gobi3.com/Pages/Login.aspx" class="item logins" target="_blank">GOBI</a>
+                  </li>
+                      <li>
+          <a href="https://experience.ebsco.com">EBSCO Experience Manager</a>
+                  </li>
+                      <li>
+          <a href="https://connect.ebsco.com" class="item" target="_blank">EBSCO Connect</a>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+                  </li>
+                      <li class="footer__column-5">
+          <span class="column">Column 5</span>
+                                    <ul class="menu">
+                          <li class="menu-item__social-bar">
+          <span class="social--bar">Social bar</span>
+                                    <ul class="menu">
+                          <li>
+          <a href="https://www.facebook.com/EBSCOInfoServices" class="item link__facebook link__social" target="_blank">Facebook</a>
+                  </li>
+                      <li>
+          <a href="https://www.twitter.com/EBSCO" class="item link__twitter link__social" target="_blank">Twitter</a>
+                  </li>
+                      <li>
+          <a href="https://www.linkedin.com/company/7777?trk=tyah" class="item link__linkedin link__social" target="_blank">LinkedIn</a>
+                  </li>
+                      <li>
+          <a href="https://www.youtube.com/user/ebscopublishing" class="item link__youtube link__social" target="_blank">YouTube</a>
+                  </li>
+                      <li>
+          <a href="https://www.instagram.com/ebscoinformationservices/" class="item link__instagram link__social" target="_blank">Instagram</a>
+                  </li>
+          </ul>
+  
+                  </li>
+                      <li class="menu-item__badges">
+          <span class="column">Badges</span>
+                                    <ul class="menu">
+                          <li>
+          <a href="https://apps.apple.com/us/app/ebsco-mobile/id1473281170" class="item store--links apple" target="_blank">App Store</a>
+                  </li>
+                      <li>
+          <a href="https://play.google.com/store/apps/details?id=com.ebsco.ebscomobile" class="item store--links google-play" target="_blank">Google Play</a>
+                  </li>
+          </ul>
+  
+                  </li>
+                      <li class="menu-item__policy-links">
+          <span class="policy--link">Policy links</span>
+                                    <ul class="menu">
+                          <li>
+          <a href="/company/privacy-policy" class="item" target="_self" data-drupal-link-system-path="node/33276">Privacy Policy</a>
+                  </li>
+                      <li>
+          <a href="/cookie-policy" class="item" data-drupal-link-system-path="node/18396">Cookie Policy</a>
+                  </li>
+                      <li>
+          <a href="/website-terms-of-use" class="item" target="_self" data-drupal-link-system-path="node/20906">Terms of Use</a>
+                  </li>
+                      <li>
+          <span class="footer__copyright">© 2023 EBSCO Information Services. All rights reserved</span>
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+                  </li>
+          </ul>
+  
+
+
+  </nav>
+      </div>
+    </section>
+  
+    </footer>
+    <!-- /footer -->
+  
+</div>
+<div id="fnOverlay"></div>
+<!-- /page -->
+
+  </div>
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"blogs\/health-notes","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"colorbox":{"transition":"fade","speed":350,"opacity":0.95,"slideshow":false,"slideshowAuto":true,"slideshowSpeed":2500,"slideshowStart":"start slideshow","slideshowStop":"stop slideshow","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","overlayClose":true,"returnFocus":true,"maxWidth":"780px","maxHeight":"100%","initialWidth":"300","initialHeight":"250","fixed":true,"scrolling":true,"mobiledetect":true,"mobiledevicewidth":"480px"},"lang":"en","lang_prefix":"en","ajaxTrustedUrl":{"\/blogs\/health-notes\/search":true,"\/search":true},"ajax":[],"user":{"uid":0,"permissionsHash":"1f8bd4386f8ee1e095495dce79ab3f610276395970e3e80a693b6776f58a6732"}}</script>
+<script src="/sites/default/files/js/js_s40anDevjmnx7F8RhDDPzhEO2F52cNwZfiymjBvcAS4.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+<script src="/sites/default/files/js/js_qWu4XzOEA9VDERHufOVUgBdtb8a65SiCxxQgp0NUfFs.js"></script>
+
+  <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"NRJS-95c274f07c8f56e17cb","applicationID":"1028148547","transactionName":"YANUZkpTXBZTB0BaXVlJdUdLRl0IHRJdVkUZBFpdX0EcFVMDUWwD","queueTime":0,"applicationTime":972,"atts":"TERXEAJJTxg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
